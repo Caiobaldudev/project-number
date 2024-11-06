@@ -56,6 +56,24 @@ button:focus {
   outline: var(--gradient-border);
 }
 
+/* Remover as setinhas dos inputs do tipo number */
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]::-ms-clear {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -82,6 +100,7 @@ img {
 /* content  */
 main {
   display: flex;
+  gap: 7rem;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -89,7 +108,7 @@ main {
 }
 
 .logo-container {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 18%;
   margin-top: 76px;
@@ -123,7 +142,7 @@ h3 {
 .questions {
   max-width: 38.6rem;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
 }
 
@@ -131,7 +150,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 3.6rem;
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -163,6 +182,70 @@ h3 {
   height: 2rem;
   color: var(--content-brand);
   margin-right: 0.8rem;
+}
+
+.aside-content p {
+  font-family: var(--font-paragraph);
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+/* form {
+} */
+
+.form-wrap {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.form-wrap label {
+  font-family: var(--font-paragraph);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.form-wrap input {
+  border: none;
+  border-radius: 8px;
+  color: var(--content-primary);
+  background-color: var(--background-secondary);
+  width: 8.6rem;
+  height: 5.6rem;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toggle-repeat {
+  margin-bottom: 4rem;
+}
+
+form button {
+  width: 100%;
+  font-family: var(--font-paragraph);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.8rem;
+  color: var(--content-primary);
+  background-color: var(--background-tertiary);
+  padding: 1.6rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.arrow-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 /* - content - */
