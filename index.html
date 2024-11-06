@@ -33,20 +33,30 @@
           <ul class="question-list">
             <li class="question-item">
               <p class="paragraph-title">
-                <img src="./assets/question.svg" alt="Question Icon" class="question-icon" />
+                <img
+                  src="./assets/question.svg"
+                  alt="Question Icon"
+                  class="question-icon"
+                />
                 Como funciona o sorteador de números?
               </p>
               <p class="answer">
-                O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.
+                O sorteador utiliza um algoritmo de geração aleatória para criar
+                números dentro do intervalo especificado pelo usuário.
               </p>
             </li>
             <li class="question-item">
               <p class="paragraph-title">
-                <img src="./assets/question.svg" alt="Question Icon" class="question-icon" />
+                <img
+                  src="./assets/question.svg"
+                  alt="Question Icon"
+                  class="question-icon"
+                />
                 Posso escolher o intervalo dos números?
               </p>
               <p class="answer">
-                Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
+                Sim, você pode definir os valores mínimo e máximo para o
+                intervalo dos números sorteados.
               </p>
             </li>
           </ul>
@@ -60,14 +70,22 @@
           veja os resultados na tela. É rápido e fácil!
         </p>
         <form>
-          <label for="input-from">Input 1:</label>
-          <input type="number" id="input-from" name="inputFrom" />
+          <div class="form-wrap">
+            <div class="form-group">
+              <label for="input-from">Números</label>
+              <input type="number" id="input-from" name="inputFrom" />
+            </div>
 
-          <label for="input-to">Input 2:</label>
-          <input type="number" id="input-to" name="inputTo" />
+            <div class="form-group">
+              <label for="input-to">de</label>
+              <input type="number" id="input-to" name="inputTo" />
+            </div>
 
-          <label for="input-quantity">Input 3:</label>
-          <input type="number" id="input-quantity" name="inputQuantity" />
+            <div class="form-group">
+              <label for="input-quantity">de</label>
+              <input type="number" id="input-quantity" name="inputQuantity" />
+            </div>
+          </div>
 
           <!-- Toggle -->
           <div class="toggle-repeat">
@@ -75,7 +93,14 @@
             <label for="no-repeat">Não repetir número</label>
           </div>
 
-          <button type="submit">Sortear</button>
+          <button type="submit">
+            Sortear
+            <img
+              src="./assets/arright.svg"
+              alt="Right arrow"
+              class="arrow-icon"
+            />
+          </button>
         </form>
       </aside>
     </main>
