@@ -40,6 +40,7 @@
 }
 
 body {
+  margin: 0 auto;
   max-width: 120rem;
   height: 100vh;
   background-color: var(--background-primary);
@@ -76,3 +77,39 @@ img {
   height: auto;
 }
 /* global */
+/* Desktop  */
+/* content  */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  line-height: 130%;
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3.8rem;
+}
+
+h2 {
+  font-family: var(--font-paragraph);
+  line-height: 150%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+}
+
+h3 {
+  font-family: var(--font-overline);
+  text-transform: uppercase;
+  color: var(--gradient-content);
+  margin-bottom: 1.3rem;
+}
+
+/* - content - */
