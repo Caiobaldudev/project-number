@@ -40,7 +40,19 @@
 }
 
 body {
-  width: 100%;
+  max-width: 120rem;
+  height: 100vh;
+  background-color: var(--background-primary);
+  color: var(--content-primary);
+  background-image: url("./assets/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+input:focus,
+button:focus {
+  outline: var(--gradient-border);
 }
 
 a {
