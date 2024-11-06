@@ -88,6 +88,13 @@ main {
   width: 100%;
 }
 
+.logo-container {
+  position: absolute; 
+  top: 0;
+  left: 18%;
+  margin-top: 76px;
+}
+
 h1 {
   font-family: var(--font-heading);
   line-height: 130%;
