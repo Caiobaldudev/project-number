@@ -100,7 +100,7 @@ img {
 /* content  */
 main {
   display: flex;
-  gap: 7rem;
+  gap: 10.8rem;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -115,6 +115,7 @@ main {
 }
 
 h1 {
+  max-width: 50.8rem;
   font-family: var(--font-heading);
   line-height: 130%;
   font-size: 7.2rem;
@@ -188,6 +189,7 @@ h3 {
   font-family: var(--font-paragraph);
   font-size: 1.6rem;
   margin-bottom: 4rem;
+  max-width: 48.2rem;
 }
 
 /* form {
