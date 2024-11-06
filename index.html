@@ -17,6 +17,45 @@
     <!-- ------ -->
   </head>
   <body>
+    <main>
+      <img src="./assets/logo.svg" alt="" />
+      <div class="left-content">
+        <h2>outline</h2>
+        <h1>Title</h1>
+        <div class="questions">
+          <p class="paragraph-title">question1</p>
+          <p class="paragraph-title">question repsonse</p>
+          <p class="paragraph-title">question2</p>
+          <p class="paragraph-title">question response</p>
+        </div>
+      </div>
+
+      <aside class="aside-content">
+        <h1>Quero Sortear:</h1>
+        <p>
+          defina o intervalo e a quantidade de números, clique em "Sortear" e
+          veja os resultados na tela. É rápido e fácil!
+        </p>
+        <form>
+          <label for="input1">Input 1:</label>
+          <input type="number" id="input1" name="input1" />
+
+          <label for="input2">Input 2:</label>
+          <input type="number" id="input2" name="input2" />
+
+          <label for="input3">Input 3:</label>
+          <input type="number" id="input3" name="input3" />
+
+          <!-- Toggle -->
+          <div class="toggle-repeat">
+            <input type="checkbox" id="no-repeat" name="noRepeat" />
+            <label for="no-repeat">Não repetir número</label>
+          </div>
+
+          <button type="submit">Sortear</button>
+        </form>
+      </aside>
+    </main>
     <script src="scripts.js"></script>
   </body>
 </html>
