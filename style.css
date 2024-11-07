@@ -212,12 +212,30 @@ h3 {
 .form-wrap input {
   border: none;
   border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 3.2rem;
   color: var(--content-primary);
   background-color: var(--background-secondary);
   width: 8.6rem;
   height: 5.6rem;
   padding: 4px 8px;
   text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* corrijir depois, tentar fazer da forma correta... */
+.form-wrap input:hover {
+  background-color: var(--background-tertiary);
+  border: 1px solid;
+  border-color: linear-gradient(
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+  border-radius: 8px;
+  border-image-slice: 1;
 }
 
 .form-group {
@@ -226,11 +244,11 @@ h3 {
   align-items: center;
 }
 
+/* Switch Button */
 .toggle-repeat {
   margin-bottom: 4rem;
 }
 
-/* Switch Button */
 .toggle-repeat {
   font-family: var(--font-paragraph);
   font-size: 1.2rem;
@@ -243,7 +261,7 @@ h3 {
   position: relative;
   display: inline-block;
   width: 30px;
-  height: 20px; 
+  height: 20px;
 }
 
 .switch input {
@@ -259,8 +277,8 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc; 
-  border-radius: 25px; 
+  background-color: #ccc;
+  border-radius: 25px;
 }
 
 /* Bolinha do switch */
@@ -268,7 +286,7 @@ h3 {
   position: absolute;
   content: "";
   height: 14px;
-  width: 14px; 
+  width: 14px;
   left: 3px;
   bottom: 3px;
   background-color: white;
@@ -278,20 +296,28 @@ h3 {
 
 /* checkbox está ativado */
 input:checked + .slider {
-  background: linear-gradient(90deg, #D586E0 0%, #91A1FA 98.93%); 
+  background: linear-gradient(90deg, #d586e0 0%, #91a1fa 98.93%);
 }
 
 /* movimento */
 input:checked + .slider:before {
   animation: bounce 0.4s ease;
-  transform: translateX(9px); 
+  transform: translateX(9px);
 }
 
 @keyframes bounce {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(12px); } 
-  70% { transform: translateX(8px); }
-  100% { transform: translateX(10px); } 
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(12px);
+  }
+  70% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
 
 /* Button do form */
