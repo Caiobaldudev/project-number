@@ -98,20 +98,21 @@ img {
 
 /* Desktop  */
 /* content  */
+.logo-container {
+  position: absolute;
+  top: 60px;
+  left: 15%;
+  /* margin-top: 76px; */
+}
+
 main {
+  padding: 0;
   display: flex;
   gap: 10.8rem;
   align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
-}
-
-.logo-container {
-  position: absolute;
-  top: 0;
-  left: 18%;
-  margin-top: 76px;
 }
 
 h1 {
@@ -336,7 +337,7 @@ form button {
   gap: 0.8rem;
   position: relative;
   border: 1px solid transparent;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 /* Seta animada */
@@ -358,13 +359,13 @@ form button:hover .arrow-icon {
 /* Keyframes */
 @keyframes move-arrow {
   0% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
   50% {
-    transform: translateX(10px); 
+    transform: translateX(10px);
   }
   100% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
 
@@ -379,3 +380,58 @@ form button:active {
 }
 
 /* - content - */
+
+/*Mobile*/
+@media (max-width: 425px) {
+  .logo-container {
+    position: initial;
+    padding-top: 4.4rem;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 0rem 3.5rem;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: start;
+  }
+
+  h3 {
+    margin-top: 2rem;
+  }
+
+  .aside-content {
+    padding: 0 2rem;
+  }
+  .aside-content p {
+    font-size: 1.4rem;
+  }
+
+  .questions {
+    max-width: 100%;
+    padding: 0 2.3rem;
+  }
+
+  .form-wrap input {
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+  }
+
+  form button {
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+}
+/*Mobile*/
